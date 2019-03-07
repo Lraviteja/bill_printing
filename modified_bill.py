@@ -25,7 +25,7 @@ print('TOTAL    :\t\t\t','{:05.2f}'.format(amnt)) #'{:05.2f}'.format()_is_used_t
 gst = float(2.50)
 GST =((gst/100)*amnt) #calculating_gst_by_using_/_*
 Gst = float(format(GST,'.2f'))
-net = format(Gst+amnt+Gst,'.2f') #format(value,'.2f')_is_used_print_only_2_digits_after_point
+net = '{:05.2f}'.format(Gst+amnt+Gst) #format(value,'.2f')_is_used_print_only_2_digits_after_point
 print(f'CGST(2.50%) : \t\t\t{Gst}\nSGST(2.50%) : \t\t\t{Gst}\t\t\t\t\nNET AMOUNT :\t{net}')
 
 
